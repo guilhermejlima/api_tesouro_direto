@@ -1,6 +1,8 @@
 from django.contrib.auth.models import User, Group
-from rest_framework import viewsets
-from tesouro_direto.tesouro.serializers import UserSerializer, GroupSerializer
+from rest_framework import viewsets, generics
+
+from tesouro_direto.tesouro.models import Titulo
+from tesouro_direto.tesouro.serializers import UserSerializer, GroupSerializer, TituloSerializer
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -17,3 +19,8 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
+
+
+class TituloViewSet(generics.ListCreateAPIView):
+    queryset = Titulo.objects.all()
+    serializer_class = TituloSerializer
