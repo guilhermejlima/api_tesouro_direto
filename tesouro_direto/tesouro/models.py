@@ -9,9 +9,9 @@ class Titulo(models.Model):
 
     nome = models.CharField(max_length=200)
     vencimento = models.CharField(max_length=200)
-    taxa_rendimento = models.IntegerField()
-    valor_minimo = models.IntegerField()
-    preco = models.IntegerField()
+    taxa_rendimento = models.CharField(max_length=200)
+    valor_minimo = models.CharField(max_length=200)
+    preco = models.CharField(max_length=200)
 
     def __str__(self):
         return self.nome
