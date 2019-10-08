@@ -12,6 +12,7 @@
 
 - clonar o projeto: "git clone https://github.com/guilhermejlima/api_tesouro_direto.git"
 - ativar a virtualenv: source/venv/bin/activate
+- execute o comando: pip install -r requirement.txt
 - rodar o projeto com o seguinte comando: python manage.py runserver
 - acessar na web a seguinte url: localhost:8000
 - acesse localhost:8000/titulos para ver a lista de titulos
