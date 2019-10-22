@@ -1,5 +1,6 @@
 language: python
 python:
   - "3.7"
-# command to run tests
-script: python tesouro_direto/tesouro/tests.py
+
+install: pip3 install -r requirements.txt
+script: python manage.py test
