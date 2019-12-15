@@ -1,4 +1,4 @@
-#!/Users/guilhermejardim/Documents/projetos/faculdade/api_tesouro_direto/venv/bin/python3.7
+#!/home/guilherme-lima/projetos/api_tesouro_direto/venv/bin/python
 from django.core import management
 
 if __name__ == "__main__":
