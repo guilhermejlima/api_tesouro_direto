@@ -1,6 +1,6 @@
 from rest_framework import generics
 
-from tesouro_direto.tesouro.Infraestructure.repository.models import Titulo
+from tesouro_direto.tesouro.Infraestructure.repository.Entities import Titulo
 from tesouro_direto.tesouro.Domain.serializers import TituloSerializer
 
 
