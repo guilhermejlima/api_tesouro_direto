@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from tesouro_direto.tesouro import views
+from tesouro_direto.tesouro.Domain import views
 
 urlpatterns = [
     url(r'^titulos/$', views.TituloList.as_view(), name='titulo-list'),

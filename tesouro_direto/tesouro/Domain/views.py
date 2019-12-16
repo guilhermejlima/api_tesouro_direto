@@ -1,7 +1,7 @@
 from rest_framework import generics
 
-from tesouro_direto.tesouro.models import Titulo
-from tesouro_direto.tesouro.serializers import TituloSerializer
+from tesouro_direto.tesouro.Infraestructure.repository.models import Titulo
+from tesouro_direto.tesouro.Domain.serializers import TituloSerializer
 
 
 class TituloList(generics.ListCreateAPIView):

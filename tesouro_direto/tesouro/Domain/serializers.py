@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
 
-from tesouro_direto.tesouro.models import Titulo
+from tesouro_direto.tesouro.Infraestructure.repository.models import Titulo
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
